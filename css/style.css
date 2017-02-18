@@ -1,0 +1,329 @@
+	/* General styles - początek*/
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+span {
+	font-weight: 700;
+	color: #1ac056;
+}
+
+.col-1-2 {
+	width: 50%;
+	float: left;
+	
+}
+
+section {
+	padding: 30px 60px;
+		
+}
+
+
+
+/* General styles - koniec*/
+
+
+/* menu nawigacyjne - początek*/
+
+#main-nav {
+	width: 100%;
+	background-color: white;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	text-align: right;
+	
+}
+
+#main-nav #drop, #main-nav .toggle {
+	display: none;
+}
+
+ul {
+	float: right;
+	padding: 10px 20px;
+}
+
+ul>li {
+	display: inline;
+	padding: 10px 20px;
+}
+
+ul>li>a {
+	text-decoration: none;
+	color: #1ac056;
+}
+
+ul>li>a:hover {
+	color: darkviolet;
+}
+
+
+/* menu nawigacyjne - koniec*/
+
+
+/*header - początek*/
+
+header {
+	background-image: url(../img/header-background.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	height: 100vh;
+	width: 100%;
+}
+
+#header-content {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	color: white;
+/*	line-height: 110%;*/
+	transform: translateY(-50%);
+
+}
+
+h1 {
+	font-family: 'Roboto';
+	font-weight: 300;
+}
+
+
+#header-content>h1 {
+	font-size: 5em;
+	font-weight: 100;
+}
+
+#header-content>h2 {
+	font-size: 2.5em;
+	font-weight: 300;
+}
+
+
+/*header - koniec*/
+
+
+/* o mnie - poczatek*/
+
+h3 {
+	text-align: center;
+	font-weight: 300;
+	font-size: 2em;
+}
+
+#omnie {
+	background-color: #f9fcfe;
+	overflow: auto;
+	box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.55);
+}
+
+#omnie img {
+	width: 100%;
+	max-width: 350px;
+	border: 20px solid #fff;
+	border-radius: 10%;
+
+}
+
+
+#omnie figure {
+	text-align: center;
+	margin: 0;
+	
+}
+
+#omnie div {
+	text-align: justify;
+	
+}
+	/* o mnie - koniec*/
+/*	skills - początek*/
+#ikonki {
+	text-align: center;
+}
+figure {
+	display: inline-block;
+	text-align: center;
+	left:0;
+	right:0;
+	margin: 15px;
+	}
+#skills {
+	overflow: auto;
+}
+
+#skills p {
+	text-align: center;
+}
+
+/*	skills - koniec*/
+/*portfolio - początek*/
+#portfolio {
+	position: relative;
+}
+#portfolio #portfoliodiv {
+	font-size: 0;
+}
+#portfolio .portfolio-obrazki {
+	height: 350px;
+	width: 33.333%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+	position: relative;
+	font-size: initial;
+	overflow: auto;
+	}
+
+#portfolio1 {
+	background-image: url(../img/portfolio1.jpg);
+	
+}
+#portfolio2 {
+	background-image: url(../img/portfolio2.jpg);
+
+}
+#portfolio3 {
+	background-image: url(../img/portfolio4.jpg);
+	
+}
+#portfolio .portfolio-obrazki .portfolio-mask{
+	background-color: rgba(33, 59, 80, 0.7);
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	transition: all 0.5s;
+	
+}
+#portfolio .portfolio-obrazki .portfolio-mask:hover {
+	opacity: 1;
+}
+
+#portfolio .portfolio-obrazki .portfolio-mask .portfolio-content {
+	border: 1px #fff solid;
+	width: 95%;
+	height: 95%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+}
+
+#portfolio .portfolio-obrazki .portfolio-mask .portfolio-content .portfolio-text {
+	color: white;
+	text-align: center;
+	
+}
+
+
+/*portfolio - koniec*/
+/* kontakt - początek*/
+#kontakt {
+	background-color: #213b50;
+	color: #fff;
+	overflow: auto;
+}
+#kontakt a {
+	text-decoration: none;
+	color: #1ac056;
+}
+#kontakt a:visited {
+	color:#fff;
+}
+
+#kontakt a:hover {
+	color:darkviolet;
+}
+
+input[type="submit"] {
+	background-color: springgreen;
+	font-weight: bold;
+	padding: 10px 20px 10px 20px;
+	border: none;
+	width: auto;
+	text-transform: uppercase;
+	float: right;
+	transition: background 0.1s ease-in; 
+	color: #fff;
+}
+input[type="submit"]:hover {
+	color: springgreen;
+	background-color: #fff;
+	cursor: pointer;
+}
+input[type="text"],
+input[type="email"]
+ {
+	margin-bottom: 10px;
+	border: 1px solid #2b4a64;
+	background-color: #2b4a64;
+	color: #ffffff;
+	width:100%;
+	height: 35px;	
+	padding-left: 5px;	
+}
+textarea {
+	margin-bottom: 10px;
+	border: 1px solid #2b4a64;
+	background-color: #2b4a64;
+	color: #ffffff;
+	width:100%;
+	height: 150px;
+	padding-left: 5px;
+}
+
+#social a {
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	border: 1px solid #fff;
+	margin-right: 20px;
+	height: 80px;
+	width: 80px;
+	line-height: 80px;
+	font-size: 3em;
+	transition: background 0.1s ease-in; 
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+#social a:hover {
+	color: #213b50;
+	background-color: #fff;
+}
+
+
+address {
+	margin-bottom: 30px;
+}
+
+/* kontakt - koniec*/
+/* footer - początek*/
+footer {
+	width: 100%;
+	height: 2em;
+	background-color: #111D28;
+	color: #fff;
+	overflow: hidden;
+	
+}
+footer p {
+	margin-top: 0;
+	padding-left: 60px;
+	padding-top: 5px;
+	margin-bottom: 0;
+}
+/* footer - koniec*/

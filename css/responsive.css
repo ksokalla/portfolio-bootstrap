@@ -1,72 +1,24 @@
 @media all and (max-width: 1200px) {
 	
-	#main-nav .toggle	{
-		display: block;
-		color: #1ac056;
-		text-align: right;
-		padding: 10px 20px;
-		font-size: 1.4em;
-		text-transform: uppercase;
-		
-	}
-	
-	#main-nav ul {
-		display: none;
-		padding: 0;
-		margin: 0;
-	}
-	
-	#main-nav>ul>li {
-		padding: 0;
-	}
-	
-	#main-nav #drop:checked + ul {
-		display: block;
-	}
-	
-	.menu-item {
-		display: block;
-		text-align: right;
-	}
-	
-	#main-nav a {
-		padding: 10px 20px;
-
-		}
-	
-	
-	#portfolio .portfolio-obrazki {
-		width: 50%;
-		display: inline-block;
-		
-	}
-	
-	#portfolio .portfolio-obrazki:last-child {
-		width: 100%;
-		display: block;
-		
-	}
 
 }
 	
 
 	
 	
-	
 @media all and (max-width: 768px){
-	.col-1-2 {
-		width: 100%;
-	}	
-	#portfolio .portfolio-obrazki {
-		width: 100%;
-	}
+	
+	#main-nav {
+		background-color: #fff;
+		border: 0px;
+	
+}
+	
 	
 	#kontakt {
 		text-align: center;	
 	}
 }
-	
-
 	
 	
 	
@@ -76,13 +28,9 @@
 	#header-content {
 		font-size: 70%;
 	}
-	#ikonki {
-	margin-right: 10px;
-}
+	
 	
 }
-	
-
 	
 	
 
@@ -90,10 +38,6 @@
 	
 	#header-content {
 		
-	}
-	section {
-		padding-left: 15px;
-		padding-right: 15px;
 	}
 	
 	#header-content {

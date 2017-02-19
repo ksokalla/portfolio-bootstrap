@@ -15,17 +15,18 @@ span {
 	color: #1ac056;
 }
 
-.col-1-2 {
-	width: 50%;
-	float: left;
-	
+#omnie div.container div.row:nth-child(2) {
+	text-align: center;
+}
+
+.row.no-padding > [class*="col-"] {
+	padding-left: 0;
+	padding-right: 0;
 }
 
 section {
-	padding: 30px 60px;
-		
+	overflow: hidden;
 }
-
 
 
 /* General styles - koniec*/
@@ -34,36 +35,25 @@ section {
 /* menu nawigacyjne - początek*/
 
 #main-nav {
-	width: 100%;
-	background-color: white;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	text-align: right;
-	
+	border: none;
+	background-color: transparent;
 }
 
-#main-nav #drop, #main-nav .toggle {
-	display: none;
+#main-nav.scroll {
+	background-color: #fff;
 }
 
-ul {
-	float: right;
-	padding: 10px 20px;
+#main-nav.scroll ul.navbar-nav a {
+		color: #1ac056;
+		text-decoration: none;
+	}
+
+#main-nav ul.navbar-nav a:hover {
+	color: greenyellow;
 }
 
-ul>li {
-	display: inline;
-	padding: 10px 20px;
-}
-
-ul>li>a {
-	text-decoration: none;
-	color: #1ac056;
-}
-
-ul>li>a:hover {
-	color: darkviolet;
+#main-nav.scroll ul.navbar-nav a:hover {
+	color: black;
 }
 
 
@@ -88,7 +78,6 @@ header {
 	right: 0;
 	margin: auto;
 	color: white;
-/*	line-height: 110%;*/
 	transform: translateY(-50%);
 
 }
@@ -123,15 +112,15 @@ h3 {
 
 #omnie {
 	background-color: #f9fcfe;
-	overflow: auto;
+/*	overflow: auto;*/
 	box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.55);
 }
 
 #omnie img {
-	width: 100%;
 	max-width: 350px;
 	border: 20px solid #fff;
 	border-radius: 10%;
+	display: inline-block;
 
 }
 
@@ -150,37 +139,35 @@ h3 {
 /*	skills - początek*/
 #ikonki {
 	text-align: center;
+	width: 50%;
+	margin: 0 auto;
 }
 figure {
 	display: inline-block;
 	text-align: center;
-	left:0;
-	right:0;
-	margin: 15px;
-	}
+	margin-bottom: 40px;
+}
+/*
 #skills {
 	overflow: auto;
 }
-
-#skills p {
-	text-align: center;
-}
+*/
 
 /*	skills - koniec*/
 /*portfolio - początek*/
 #portfolio {
 	position: relative;
+	
 }
 #portfolio #portfoliodiv {
 	font-size: 0;
+	
 }
 #portfolio .portfolio-obrazki {
 	height: 350px;
-	width: 33.333%;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	display: inline-block;
 	position: relative;
 	font-size: initial;
 	overflow: auto;
@@ -225,7 +212,7 @@ figure {
 #portfolio .portfolio-obrazki .portfolio-mask .portfolio-content .portfolio-text {
 	color: white;
 	text-align: center;
-	
+		
 }
 
 
@@ -234,7 +221,7 @@ figure {
 #kontakt {
 	background-color: #213b50;
 	color: #fff;
-	overflow: auto;
+	overflow: hidden;
 }
 #kontakt a {
 	text-decoration: none;

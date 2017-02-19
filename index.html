@@ -4,25 +4,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Moje portfolio</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Roboto:100,300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/font-awesome.min.css"> 
 	<link rel="stylesheet" href="css/responsive.css">
-	
+
 	</head>
 
 <body>
 	<!--menu nawigacyjne - początek-->
-	<nav id="main-nav">
-	<label for="drop" class="toggle">Menu</label>
-	<input type="checkbox" id="drop">
-		<ul class>
-			<li><a class="menu-item" href="#omnie">o mnie</a></li>
-			<li><a class="menu-item" href="#skills">umiejętności</a></li>
-			<li><a class="menu-item" href="#portfolio">portfolio</a></li>
-			<li><a class="menu-item" href="#kontakt">kontakt</a></li>
-		</ul>
-	</nav>
+	<nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>  </div>
+	<div class="collapse navbar-collapse" id="main-menu">
+			<ul class="nav navbar-nav navbar-right">
+				
+				<li><a href="#omnie">o mnie</a></li>
+				<li><a href="#skills">umiejętności</a></li>
+				<li><a href="#portfolio">portfolio</a></li>
+				<li><a href="#kontakt">kontakt</a></li>
+				
+				</li>
+			</ul>
+			
+			</ul>
+		</div>
+	</div>
+</nav>
 	<!--menu nawigacyjne - koniec-->
 	<!--	header - początek-->
 	<header>
@@ -33,82 +43,104 @@
 	<!--	header - koniec-->
 	<!--	omnie - początek-->
 	<section id="omnie">
-		<h3>O <span>mnie</span></h3>
+		<div class="container">
+			<div class="row"> 
+				<h3>O <span>mnie</span></h3>
+	
+			</div>
+			<div class="row">
+				
+				<figure class="col-md-6">
 		
-		<figure class="col-1-2">
+					<img src="img/Krzysiek%20S-7.jpg" alt="Jan Nowak">
 		
-				<img src="img/jan-nowak.jpg" alt="Jan Nowak">
+				</figure>
 		
-		</figure>
-		
-		<div class="col-1-2">
+		<div class="col-md-6">
 		
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est neque ullam soluta, quam pariatur laudantium corrupti. Modi veniam accusamus, voluptatibus adipisci, qui, itaque consectetur quod sequi eveniet quo molestias mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eaque nesciunt adipisci corporis cumque provident commodi inventore ut labore magni eum, repudiandae quae voluptates harum quis eius iste, voluptate illum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nostrum fugit itaque ad sunt pariatur eligendi nemo, voluptatum sit optio vel architecto tenetur deleniti adipisci saepe eius quis dolores cum.</p>
 		
 		</div>
-		
+		</div>
 	</section>
 	<!--	omnie - koniec-->
 	
 <!-- skills - początek	-->
 <section id="skills">
-	<h3>Moje <span>umiejętności</span></h3>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero minima facere error voluptate cupiditate suscipit libero, quo illum nobis quos culpa laborum omnis, ducimus quae perspiciatis nihil eaque enim a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eius corporis magni libero aspernatur, ad temporibus, voluptas non quaerat fugit, consequuntur, illo omnis atque est voluptatem voluptate rem ipsum ducimus.</p>
-<div id="ikonki">
-	<figure><img src="icons/html5.png" alt="html5">
-		<figcaption>HTML5</figcaption>
-	</figure>
-	<figure><img src="icons/css3.png" alt="css3">
-		<figcaption>CSS3</figcaption>
-	</figure>
-	<figure> <img src="icons/js.png" alt="js">
-		<figcaption>JavaScript</figcaption>
-	</figure>
-	<figure> <img src="icons/jquery.png" alt="js">
-		<figcaption>jQuery</figcaption>
-	</figure>
-</div>
+	<div class="container text-center">
+		<div class="row">
+			<h3>Moje <span>umiejętności</span></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero minima facere error voluptate cupiditate suscipit libero, quo illum nobis quos culpa laborum omnis, ducimus quae perspiciatis nihil eaque enim a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eius corporis magni libero aspernatur, ad temporibus, voluptas non quaerat fugit, consequuntur, illo omnis atque est voluptatem voluptate rem ipsum ducimus.</p>
+		</div>
+
+			<div id="ikonki" class="row">
+			
+				<figure class="col-lg-3 col-md-6 col-xs-12" >	
+					<img src="icons/html5.png" alt="html5">
+						<figcaption>HTML5</figcaption>
+				</figure>
+					<figure class="col-lg-3 col-md-6 col-xs-12">	
+						<img src="icons/css3.png" alt="css3">
+							<figcaption>CSS3</figcaption>
+				</figure>
+					<figure class="col-lg-3 col-md-6 col-xs-12"> 
+						<img src="icons/js.png" alt="js">
+							<figcaption>JavaScript</figcaption>
+				</figure>
+					<figure class="col-lg-3 col-md-6 col-xs-12"> 
+						<img src="icons/jquery.png" alt="js">
+							<figcaption>jQuery</figcaption>
+				</figure>
+			</div>
+		</div>
+
+	</div>
 </section>
 <!-- skills - początek	-->
 <!--portfolio - początek-->
 <section id="portfolio">
-	<h3>Moje<span> portfolio</span></h3>
-	<div id="portfoliodiv">
-		<div class="portfolio-obrazki" id="portfolio1">
-			<div class="portfolio-mask">
-				<div class="portfolio-content">
-					<div class="portfolio-text">
-						<h3>Lorem ipsum</h3>
-						<p>dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptatibus sequi debitis doloribus maxime at ab dolore ducimus. Harum repellat saepe quasi et, illum ipsum totam itaque ipsam, esse natus.</p>
-						<h4>Wykorzystane technologie:</h4>
-						<p>HTML5, CSS3, JavaScript, jQuery, Bootstrap</p>
-						<p><a href="http://ksokalla.github.io"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a></p>
+	<div class="container">
+	<div class="row">
+		<h3>Moje<span> portfolio</span></h3>
+	</div>
+	
+		<div id="portfoliodiv" class="row no-padding">
+			<div class="portfolio-obrazki col-lg-4 col-sm-6" id="portfolio1">
+				<div class="portfolio-mask">
+					<div class="portfolio-content">
+						<div class="portfolio-text">
+							<h3>Lorem ipsum</h3>
+							<p>dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptatibus sequi debitis doloribus maxime at ab dolore ducimus. Harum repellat saepe quasi et, illum ipsum totam itaque ipsam, esse natus.</p>
+							<h4>Wykorzystane technologie:</h4>
+							<p>HTML5, CSS3, JavaScript, jQuery, Bootstrap</p>
+							<p><a href="http://ksokalla.github.io"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a></p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="portfolio-obrazki" id="portfolio2">
-			<div class="portfolio-mask">
-				<div class="portfolio-content">
-					<div class="portfolio-text">
-						<h3>Lorem ipsum</h3>
-						<p>dolor sit amet, consectetur adipisicing elit. Neque laudantium labore inventore perferendis, nihil commodi voluptatibus soluta, architecto asperiores quaerat beatae, molestias. Velit, eius numquam cupiditate? Consequuntur recusandae, sed blanditiis.</p>
-						<h4>Wykorzystane technologie:</h4>
-						<p>HTML5, CSS3, JavaScript, jQuery, Bootstrap</p>
-						<p><a href="http://ksokalla.github.io"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a></p>
+			<div class="portfolio-obrazki col-lg-4 col-sm-6" id="portfolio2">
+				<div class="portfolio-mask">
+					<div class="portfolio-content">
+						<div class="portfolio-text">
+							<h3>Lorem ipsum</h3>
+							<p>dolor sit amet, consectetur adipisicing elit. Neque laudantium labore inventore perferendis, nihil commodi voluptatibus soluta, architecto asperiores quaerat beatae, molestias. Velit, eius numquam cupiditate? Consequuntur recusandae, sed blanditiis.</p>
+							<h4>Wykorzystane technologie:</h4>
+							<p>HTML5, CSS3, JavaScript, jQuery, Bootstrap</p>
+							<p><a href="http://ksokalla.github.io"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a></p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="portfolio-obrazki" id="portfolio3">
-			<div class="portfolio-mask">
-				<div class="portfolio-content">
-					<div class="portfolio-text">
-						<h3>Lorem ipsum</h3>
-						<p>dolor sit amet, consectetur adipisicing elit. Provident aliquid error saepe odit quas cumque veniam. Laboriosam voluptas ipsam at quia atque, incidunt aut, facilis eaque, nisi quis non similique!</p>
-						<h4>Wykorzystane technologie:</h4>
-						<p>HTML5, CSS3, JavaScript, jQuery, Bootstrap</p>
-						<p><a href="http://ksokalla.github.io"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a></p>
+			<div class="portfolio-obrazki col-lg-4 col-sm-12" id="portfolio3">
+				<div class="portfolio-mask">
+					<div class="portfolio-content">
+						<div class="portfolio-text">
+							<h3>Lorem ipsum</h3>
+							<p>dolor sit amet, consectetur adipisicing elit. Provident aliquid error saepe odit quas cumque veniam. Laboriosam voluptas ipsam at quia atque, incidunt aut, facilis eaque, nisi quis non similique!</p>
+							<h4>Wykorzystane technologie:</h4>
+							<p>HTML5, CSS3, JavaScript, jQuery, Bootstrap</p>
+							<p><a href="http://ksokalla.github.io"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a></p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -120,52 +152,53 @@
 <!--portfolio - koniec-->
 <!-- kontakt - początek-->
 <section id="kontakt">
-<div class="col-1-2">
-	<h2>Krzysztof <span>Sokalla</span></h2>
-	<address>
-		ul. Przewóz 32a/10
-		<br>
-		30-716 Kraków
-		<br>
-		<br>
-		tel: 507106815
-		<br>
-		e-mail: <a href="mailto:k.sokalla@gmail.com">k.sokalla@gmail.com</a>
-	</address>
-	<div id="social"> 
-
-			<a href="http://facebook.com">
-				<i class="fa fa-facebook"  aria-hidden="true"></i></a> 
-
-			<a href="http://google.com">
-				<i class="fa fa-google-plus" aria-hidden="true"></i></a> 
-
-			<a href="http://twitter.com">
-				<i class="fa fa-twitter" aria-hidden="true"></i></a> 
-
-			<a href="http://linkedin.com">
-				<i class="fa fa-linkedin" aria-hidden="true"></i></a>
-
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6" />
+			<h2>Krzysztof <span>Sokalla</span></h2> <address>
+				ul. Przewóz 32a/10
+				<br>
+				30-716 Kraków
+				<br>
+				<br>
+				tel: 507106815
+				<br>
+				e-mail: <a href="mailto:k.sokalla@gmail.com">k.sokalla@gmail.com</a>
+			</address>
+			<div id="social">
+				<a href="https://www.facebook.com/hunterro"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="http://czlowiekzlyzka.pl"> <i class="fa fa-cutlery" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/czlowiek_z_lyzka/"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href="https://www.linkedin.com/in/krzysztof-sokalla-240a3089/"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<form action="https://formspree.io/k.sokalla@gmail.com" method="post">
+				<br>
+				<input type="text" id="name" name="name" placeholder="Imię i nazwisko">
+				<br>
+				<br>
+				<input type="email" id="mail" name="mail" placeholder="E-mail">
+				<br>
+				<br>
+				<textarea name="message" id="message" cols="30" rows="10" placeholder="Treść wiadomości"></textarea>
+				<br>
+				<input type="submit" value="Wyślij"> </form>
+		</div>
 	</div>
-</div>
-	<div class="col-1-2">
-		<form action="https://formspree.io/k.sokalla@gmail.com" method="post">
-			<br>
-			<input type="text" id="name" name="name" placeholder="Imię i nazwisko"><br>
-			<br>
-			<input type="email" id="mail" name="mail" placeholder="E-mail"><br>
-			<br>
-			<textarea name="message" id="message" cols="30" rows="10" placeholder="Treść wiadomości"></textarea>
-			<br>
-			<input type="submit" value="Wyślij"> 
-		</form>
-	</div> </section>
+</section>
 <!-- kontakt - koniec-->
 <!-- footer - początek-->
 <footer>
 	<p>Copyright &copy Krzysztof Sokalla</p>
 </footer>
 <!-- footer - koniec-->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 
 </html>
